@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url(/FinalProject/ProductLandingPage/img/mountaindew.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+
+}
+
+.logo {
+    width: 60vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: flex;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+div {
+    display: block;
+}
+
+#header-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+#nav-bar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #94C93D;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: #94C93D;
+}
+
+#video {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 100px auto;
+}
+
+#form {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#email {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #94C93D;
+    color: #fff;
+    border: none;
+}
+
+#features {
+    margin-top: 30px;
+}
+
+#contact {
+    margin-top: 30px;
+}
+
+.section {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-link {
+        margin: 10px 0;
+    }
+    
+    #form {
+        width: 80%;
+    }
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+}
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.product>.level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product>button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #94C93D;
+    font-weight: 400;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.container.video {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+footer {
+    font-size: large;
+    color: #FFFFFF;
+}
+
+a {
+    color: white;
+}

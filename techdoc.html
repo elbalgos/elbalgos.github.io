@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/FinalProject/TechnicalDocumentationPage/styles/style.css">
+    <title>Technical Documentation</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #navbar {
+        background-color: #f4f4f4;
+        padding: 20px;
+        width: 200px;
+        position: fixed;
+        left: 0;
+    }
+    
+    #navbar header {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .nav-link {
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .nav-link:hover {
+        color: #f39c12;
+    }
+    
+    #main-doc {
+        margin-left: 220px;
+        padding: 20px;
+    }
+    
+    .main-section {
+        margin-bottom: 40px;
+    }
+    
+    .main-section header {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .main-section p {
+        margin-bottom: 10px;
+    }
+    
+    .main-section code {
+        display: block;
+        background-color: #f4f4f4;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .main-section li {
+        list-style-type: circle;
+        margin-left: 20px;
+    }
+    
+    
+    /* Media Query for smaller screens */
+    @media (max-width: 768px) {
+        body {
+            flex-direction: column;
+        }
+    
+        #navbar {
+            position: static;
+            width: 100%;
+        }
+    
+        #main-doc {
+            margin-left: 0;
+        }
+    }
+    
+    </style>
+    </head>
+    <body>
+    <nav id="navbar">
+        <header>Technical Documentation</header>
+        <a class="nav-link" href="#Introduction_to_JavaScript">Introduction to HTML5, CSS, and JavaScripts</a>
+        <a class="nav-link" href="#10 Advanced Git Commands">10 Advanced Git Commands</a>
+        <a class="nav-link" href="#Windows Subsystem for Linux S">Windows Subsystem for Linux S</a>
+
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_to_JavaScript">
+            <header>Introduction to HTML5, CSS, and JavaScript</header>
+            <ul>
+                <li>HTML is the standard markup language used to create the structure and content of web pages.</li>
+                <li>HTML5 is the latest version of HTML, and it introduces new features and improvements over its predecessors.</li>
+                <li>It provides tags and attributes that define the various elements on a web page, such as headings, paragraphs, 
+                    images, links, forms, and more.
+                </li>
+                
+            </ul>
+
+            <br>
+            <p><b>CSS (Cascading Style Sheets):</b></p>
+            <ul>
+                <li>CSS is used to style and layout the visual presentation of HTML Documents.</li>
+                <li>It allows you to control the colors, fonts, spacing, and positioning of elements on a web page.</li>
+                <li>CSS is applied either internally within an HTML document, externally in a separate stylesheet file, 
+                    or inline within HTML tags.
+                </li>
+            </ul>
+
+            <br>
+            <p><b>JavaScript</b></p>
+            <ul>
+                <li>JavaScript is a scripting langauge that enables dynamic and interactive behavior on web pages.</li>
+                <li>It can manipulate the content and structure of HTML, handle user input, and communicate with servers (Ajax).</li>
+                <li>JavaScript is commonly used to create features like sliders, form validation, pop-up messages, and more.</li>
+                <li>It can be included directly within HTML documents or linked externally.</li>
+                
+                <br>
+                <b>
+                    These three technologies (HTML5, CSS, JavaScript) work together to create modern, dynamic, and visually appealing 
+                    websites and <br> web applications. As you progress in web development, you'll likely use frameworks and libraries that 
+                    build upon these <br> core technologies, such as React, Angular, or Vue for JavaScript, and Bootstrap or Tailwind CSS 
+                    for styling.
+                </b>
+            </ul>
+        </section>
+        <section class="main-section" id="10 Advanced Git Commands">
+            <header>10 Advanced Git Commands</header>
+            <ul>
+                <b>1. Add & Commit</b>
+                <li>
+                    You have added and committed the files this way multiple times, but what if I tell you it can be done in one line 
+                    with the `-am` flag? <br> <br>
+                    <code>$ git add .</code>
+                    <code>$ git commit -m "new project"</code>
+                </li>
+                <br>
+
+                <b>2. Ammend</b>
+                <li>
+                    You can rename your current commit message using the `--amend` flag and write the new message. This will help you 
+                    with accidental messages. <br> <br>
+                    <code>$ git commit --amend -m "Love"</code>
+                </li>
+                <br>
+
+                <b>3. Revert</b>
+                <li>
+                    To undo a commit in Git, you can use the `revert` command. However, this command does not remove any commits. Instead, 
+                    it creates a new commit that <br> undoes the changes made by the original commit. We will use the `log` with `--oneline` flag 
+                    to view commit in a shorter form. <br> <br>
+                    <code>
+                        f425059 (HEAD -> master, origin/master) Love 8f184d5 first commit
+                    </code>
+                </li>
+            </ol>
+            
+        </section>
+        <section class="main-section" id="Windows Subsystem for Linux S">
+            <header>Windows Subsystem for Linux S</header>
+            <p><b>List of Commands</b></p>
+            <ul>
+                <li>
+                    <code><b>wsl --install</b><br>
+                    Installs Linux on your computer.
+                    </code>
+                </li>
+
+                <li>
+                    <code><b>wsl</b><br>
+                    Opens Linux in your terminal.
+                    </code>
+                </li>
+
+                <li>
+                    <code><b>logout or exit</b><br>
+                    Returns to command prompt in windows.
+                    </code>
+                </li>
+
+                <li>
+                    <code>
+                        <b>clear</b><br>
+                        Clears the terminal screen.
+                    </code>
+                </li>
+                
+                <p><b>Apache Commands</b></p>
+                <li>
+                    <code>
+                        <b>sudo apt update</b><br>
+                        Updates Linux before installation of Apache.
+                    </code>
+                </li>
+
+                <li>
+                    <code>
+                        <b>sudo apt upgrade</b><br>
+                        Upgrades Linux.
+                    </code>
+                </li>
+
+                <li>
+                    <code>
+                        <b>sudo apt-get install apache2</b><br>
+                        Installs Apache server.
+                    </code>
+                </li>
+
+                <li>
+                    <code>
+                        <b>sudo service apache2 start</b><br>
+                        Starts Apache server.
+                    </code>
+                </li>
+
+                <li>
+                    <code>
+                        <b>sudo service apache2 stop</b><br>
+                        Stops Apache server.
+                    </code>
+                </li>
+
+                <p><b>Apache Setup</b></p>
+                <li>
+                    <code>
+                        <b>sudo nano</b><br>
+                        Open text editor.
+                    </code>
+                </li>
+
+                <li>
+                    <code>
+                        <b>sudo chown -R username path/to/working/directory</b><br>
+                        Make folder writable.
+                    </code>
+                </li>
+
+                <li>
+                    <code>
+                        <b>sudo nano etc/apache2/sites-available/000-default.conf</b><br>
+                        Enable site look for document root and change it your desired folder 
+                        to run in locations.
+                    </code>
+                </li>
+
+                <li>
+                    <code>
+                        <b>sudo systemct1 status apache2</b><br>
+                        Check if Apache is running.
+                    </code>
+                </li>
+
+                <li>
+                    <code>
+                        <b>sudo systemct1 restart apache2</b><br>
+                        Restart Apache. You need this every time you change the document root. 
+                        The refresh your browser to update the output.
+                    </code>
+                </li>
+
+                <p><b>Folder Locations</b></p>
+                <li>
+                    <code>
+                        <b>etc/apache2</b><br>
+                        Apache Folder
+                    </code>
+                </li>
+
+                <li>
+                    <code>
+                        <b>/var/www</b><br>
+                        Document Root
+                    </code>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="/css/productlanding.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Product Landing Page</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-image: url(/images/Productpageimg/mountaindew.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+
+    .logo {
+        width: 60vw;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .grid {
+        display: flex;
+        color: #FFFFFF;
+    }
+    
+    .container {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    
+    div {
+        display: block;
+    }
+    
+    #header-img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 130px;
+        border-radius: 50%;
+    }
+    
+    #nav-bar {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #94C93D;
+        z-index: 1000;
+    }
+    
+    .nav-link {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    
+    .nav-link:hover {
+        color: #94C93D;
+    }
+    
+    #video {
+        width: 100%;
+        max-width: 800px;
+        display: block;
+        margin: 100px auto;
+    }
+    
+    #form {
+        max-width: 400px;
+        margin: 50px auto;
+        text-align: center;
+    }
+    
+    #email {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    #submit {
+        width: 100%;
+        padding: 10px;
+        background-color: #94C93D;
+        color: #fff;
+        border: none;
+    }
+    
+    #features {
+        margin-top: 30px;
+    }
+
+    #contact {
+        margin-top: 30px;
+    }
+    
+    .section {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+    }
+    
+    @media (max-width: 768px) {
+        #header {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .nav-link {
+            margin: 10px 0;
+        }
+        
+        #form {
+            width: 80%;
+        }
+    }
+    
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: calc(100% / 3);
+        margin: 10px;
+        border: 1px solid #FFFFFF;
+        border-radius: 3px;
+    }
+    
+    #pricing {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: #FFFFFF;
+    }
+    
+    .product>.level {
+        background-color: #ddd;
+        color: black;
+        padding: 15px 0;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    
+    .product>button {
+        border: 0;
+        margin: 15px 0;
+        background-color: #94C93D;
+        font-weight: 400;
+    }
+    
+    h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+    
+    .btn {
+        padding: 0 20px;
+        height: 40px;
+        font-size: 1em;
+        font-weight: 900;
+        text-transform: uppercase;
+        border: 3px black solid;
+        border-radius: 2px;
+        background: transparent;
+        cursor: pointer;
+    }
+    
+    .container.video {
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+    }
+
+    footer {
+        font-size: large;
+        color: #FFFFFF;
+    }
+
+    a {
+        color: white;
+    }
+
+    </style>
+
+
+</head>
+
+<body>
+    <header id="header">
+
+        <nav id="nav-bar">
+            <a class="nav-link" href="https://dewnationhq.mountaindew.com/users/sign_in">Dew Nation HQ</a>
+            <a class="nav-link" href="https://contact.pepsico.com/mtndew/product-locator">How To Order</a>
+            <a class="nav-link" href="https://mountaindew.in/products.php">Product/Pricing</a>
+        </nav>
+    </header>
+
+    <div id="page-wrapper">
+        <header id="header">
+            <div class="logo">
+                <img id="header-img"
+                    src="/images/Productpageimg/mountaindewlogo.jpg"
+                    alt="original trombones logo">
+            </div>
+
+            <div class="container"></div>
+
+            <section id="hero">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <form id="form" action="">
+                        <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
+                        <input id="submit" type="submit" value="Sign in" class="btn">
+                    </form>
+            </section>
+
+            <div class="container">
+                <section id="features">
+                    <div class="grid">
+                        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+                        <div class="desc">
+                            <h2>Mountain Dew</h2>
+                            <h3>
+                                Mountain Dew, stylized as Mtn Dew in some countries, is a carbonated soft drink brand produced 
+                                and owned by PepsiCo. The original formula was invented in 1940 by Tennessee beverage bottlers 
+                                Barney and Ally Hartman. A revised formula was created by Bill Bridgforth in 1958.
+                            </h3>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container video">
+                    <iframe style="width: 600px; height: 400px;" src="https://www.youtube.com/embed/H8g_c0iF3FY?si=9YxYdyB_n2OBW4ZC"></iframe>
+                </div>
+
+                <section id="pricing">
+                    <div class="product" id="tahong">
+                        <div class="level">MOUNTAIN DEW ZERO SUGAR</div>
+                        <h2>₱200.00</h2>
+                        <ul>
+                            <p>Per Piece</p>
+                            <li>₱38.00</li>
+                        </ul>
+                        <button class="btn">Select</button>
+                    </div>
+                    <div class="product" id="itlog">
+                        <div class="level">MOUNTAIN DEW IN CAN 330ML</div>
+                        <h2>₱198.00</h2>
+                        <ul>
+                            <p>Per Piece</p>
+                            <li>₱36.25</li>
+                        </ul>
+                        <button class="btn">Select</button>
+                    </div>
+                    <div class="product" id="talong">
+                        <div class="level">MOUNTAIN DEW 330ML</div>
+                        <h2>₱165.00</h2>
+                        <ul>
+                            <p>Per Piece</p>
+                            <li>₱21.00</li>
+                        </ul>
+                        <button class="btn">Select</button>
+                    </div>
+                </section> <br>
+                <footer>
+                    <li><a href="https://dewnationhq.mountaindew.com/privacy_policy">Privacy Policy</a></li>
+                    <li><a href="https://dewnationhq.mountaindew.com/terms_and_conditions">Terms and Conditions</a></li>
+                    <li><a href="https://www.instagram.com/mountaindewin/?hl=en">Contact</a></li> <br>
+                    <p>&copy; 2024 Mountain Dew. All Rights Reserved. Use of this site constitutes acceptance of our Terms of Use and Privacy Policy.</p>
+                </footer>
+            </div>
+    </div>
+</body>
+</html>
